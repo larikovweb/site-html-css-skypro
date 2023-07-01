@@ -1,0 +1,35 @@
+.com-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(24);
+    text-decoration: none;
+    color: $darkColor;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: rem(3);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: rem(1);
+        background-color: $darkColor;
+        transition: width .3s;
+    }
+
+    &_white {
+        color: $lightColor;
+
+        &::before {
+            background-color: $lightColor;
+        }
+    }
+
+    &:hover {
+        &::before {
+            width: 0;
+        }
+    }
+}

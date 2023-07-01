@@ -1,0 +1,135 @@
+.footer {
+  background: #f7f6f6;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: rem(32);
+    padding-bottom: rem(40);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: rem(198);
+    height: rem(44);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: $darkColor;
+  }
+
+  &__navs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: rem(338);
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $greyColor;
+    text-decoration: none;
+    margin-top: rem(12);
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: rem(1);
+      background-color: $greyColor;
+      transition: width 0.3s;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: rem(12);
+      line-height: rem(16);
+      color: $darkColor;
+      margin-bottom: rem(16);
+    }
+
+    input {
+      background: $lightColor;
+      border: rem(1) solid $inputColor;
+      box-sizing: border-box;
+      border-radius: rem(20);
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem(15);
+      line-height: rem(18);
+      color: $darkColor;
+      padding: rem(12) rem(25);
+      outline: none;
+      margin-bottom: rem(12);
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        color: $inputColor;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(116);
+    margin-top: rem(16);
+
+    a {
+      display: inline-block;
+      width: rem(28);
+      height: rem(28);
+      opacity: 0.5;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: $tableWidth) {
+    &__logo {
+      display: none;
+    }
+  }
+
+  @media (max-width: $phoneWidth) {
+    .container {
+      padding-bottom: rem(32);
+    }
+
+    &__navs {
+      max-width: none;
+    }
+
+    &__form {
+      margin: rem(32) auto 0;
+    }
+  }
+}

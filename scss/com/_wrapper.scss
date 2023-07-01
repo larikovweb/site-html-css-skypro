@@ -1,0 +1,32 @@
+.com-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: rem(-28) rem(-16);
+
+    >* {
+        margin: rem(28) rem(16);
+        width: calc(33.333333% - 2rem);
+    }
+
+    @media (max-width: $tableWidth) {
+        margin: rem(-19) rem(-14.5);
+
+        >* {
+            margin: rem(19) rem(14.5);
+            width: calc(50% - 1.8125rem);
+        }
+    }
+
+    @media (max-width: $phoneWidth) {
+        margin: 0;
+
+        >* {
+            margin: 0;
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: rem(32);
+            }
+        }
+    }
+}

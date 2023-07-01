@@ -1,0 +1,16 @@
+.com-input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: rem(1) solid $inputColor;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(17);
+    padding-bottom: rem(4);
+    transition: border .3s;
+
+    &:focus {
+        border-bottom: rem(1) solid $darkColor;
+    }
+}

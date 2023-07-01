@@ -1,0 +1,28 @@
+.com-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(17);
+    color: $darkColor;
+    border: rem(1) solid $darkColor;
+    border-radius: rem(50);
+    background: transparent;
+    width: 100%;
+    height: rem(37);
+    transition: background .3s, color .3s;
+
+    &_grey {
+        border: none;
+        height: rem(44);
+        background: rgba(222, 215, 215, 0.41);
+    }
+
+    &:hover,
+    &:focus {
+        color: $lightColor;
+        background-color: $darkColor;
+    }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Корзина интернет магазина мебели" />
+    <meta name="author" content="Larikov Yurii" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Главная</title>
+  </head>
+
+  <body>
+    <header class="header container">
+      <a class="header__logo" href="./index.html">
+        <img src="./img/logo.svg" alt="Интерьер." />
+      </a>
+      <div class="header__input">
+        <input placeholder="Поиск" type="text" />
+      </div>
+      <nav>
+        <ul class="header__list">
+          <li>
+            <a href="./catalog.html">
+              <img src="./img/icons/header/link-2.svg" alt="Каталог" />
+              <span>Каталог</span>
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html">
+              <img src="./img/icons/header/link-3.svg" alt="Корзина" />
+              <span>Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container">
+          <h1 class="main__title">Всё, чего заслуживает ваш дом</h1>
+          <p class="main__descr">Наша мебель — ваше отражение</p>
+          <a class="com-link com-link_white" href="./catalog.html"
+            >Перейти в каталог</a
+          >
+          <picture>
+            <source
+              media="(min-width: 578px)"
+              srcset="./img/main/main-bg.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 578px)"
+              srcset="./img/main/main-bg.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 578px)"
+              srcset="./img/main/main-bg_mob.webp"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 578px)"
+              srcset="./img/main/main-bg_mob.jpg"
+              type="image/jpg"
+            />
+            <img class="main__bg" src="./img/main/main-bg.jpg" alt="Фон" />
+          </picture>
+        </div>
+      </section>
+      <section class="for container">
+        <h2 class="for__title com-title">Мебель для ...</h2>
+        <div class="for__wrapper">
+          <a href="#" class="for__item">
+            <picture>
+              <source srcset="./img/for/for-1.webp" type="image/webp" />
+              <img src="./img/for/for-1.png" alt="для отдыха" />
+            </picture>
+            ОТДЫХА
+          </a>
+          <a href="#" class="for__item">
+            <picture>
+              <source srcset="./img/for/for-2.webp" type="image/webp" />
+              <img src="./img/for/for-2.png" alt="для работы" />
+            </picture>
+            РАБОТЫ
+          </a>
+          <a href="#" class="for__item">
+            <picture>
+              <source srcset="./img/for/for-3.webp" type="image/webp" />
+              <img src="./img/for/for-3.png" alt="для кухни" />
+            </picture>
+            КУХНИ
+          </a>
+          <a href="#" class="for__item">
+            <picture>
+              <source srcset="./img/for/for-4.webp" type="image/webp" />
+              <img src="./img/for/for-4.png" alt="для детской" />
+            </picture>
+            ДЕТСКОЙ
+          </a>
+          <a href="#" class="for__item">
+            <picture>
+              <source srcset="./img/for/for-5.webp" type="image/webp" />
+              <img src="./img/for/for-5.png" alt="для ванной" />
+            </picture>
+            ВАННОЙ
+          </a>
+        </div>
+      </section>
+      <section class="offer container">
+        <h2 class="com-title">Специальные предложения</h2>
+        <div class="com-wrapper">
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/voda.webp" type="image/webp" />
+                <img src="./img/products/voda.jpg" alt="Люстра VODA" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Люстра VODA</div>
+              <p class="product-card__descr">
+                Основание из полированной нержавеющей стали, придает
+                оригинальный парящий эффект.
+              </p>
+              <div class="product-card__price">45 000 руб.</div>
+              <div class="product-card__price product-card__price_old">
+                67 000 руб
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/ronald.webp" type="image/webp" />
+                <img src="./img/products/ronald.jpg" alt="Диван RONALD" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Диван RONALD</div>
+              <p class="product-card__descr">
+                Модель отличается простотой линий и форм, отсутствием броского
+                декора.
+              </p>
+              <div class="product-card__price">156 000 руб.</div>
+              <div class="product-card__price product-card__price_old">
+                198 000 руб.
+              </div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/vilora.webp" type="image/webp" />
+                <img src="./img/products/vent.jpg" alt="Комод VENT" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Комод VENT</div>
+              <p class="product-card__descr">
+                Европейский дуб - отличается особой прочностью и стабильностью.
+              </p>
+              <div class="product-card__price">34 000 руб.</div>
+              <div class="product-card__price product-card__price_old">
+                45 000 руб.
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="products container">
+        <h2 class="com-title">Каталог товаров</h2>
+        <div class="com-wrapper">
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/tatran.webp" type="image/webp" />
+                <img src="./img/products/tatran.jpg" alt="Кровать TATRAN" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Кровать TATRAN</div>
+              <p class="product-card__descr">
+                Основание из полированной нержавеющей стали, придает
+                оригинальный парящий эффект.
+              </p>
+              <div class="product-card__price">120 000 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/vilora.webp" type="image/webp" />
+                <img src="./img/products/vilora.jpg" alt="Кресло VILORA" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Кресло VILORA</div>
+              <p class="product-card__descr">
+                Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья
+                и приятная на ощупь ткань.
+              </p>
+              <div class="product-card__price">21 000 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/menu.webp" type="image/webp" />
+                <img src="./img/products/menu.jpg" alt="Стол MENU" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Стол MENU</div>
+              <p class="product-card__descr">
+                Для того чтобы трапезничать было приятно, необходим правильный
+                обеденный стол.
+              </p>
+              <div class="product-card__price">34 000 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source
+                  srcset="./img/products/askesta.webp"
+                  type="image/webp"
+                />
+                <img src="./img/products/askesta.jpg" alt="Кресло ASKESTA" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Кресло ASKESTA</div>
+              <p class="product-card__descr">
+                Высокоэластичный пенополиуретан в «начинке» кресла надежен и
+                долговечен
+              </p>
+              <div class="product-card__price">68 000 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/norman.webp" type="image/webp" />
+                <img src="./img/products/norman.jpg" alt="Стол NORMAN" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Стол NORMAN</div>
+              <p class="product-card__descr">
+                Прекрасно переносит солнечные лучи, перепады влажности и любые
+                осадки
+              </p>
+              <div class="product-card__price">40 000 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img">
+              <picture>
+                <source srcset="./img/products/nastan.webp" type="image/webp" />
+                <img src="./img/products/nastan.jpg" alt="Диван NASTAN" />
+              </picture>
+              <div class="product-card__btns">
+                <img src="./img/icons/shop_bag.svg" alt="Корзина" />
+                <img src="./img/icons/shop_like.svg" alt="Избранное" />
+              </div>
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__name">Диван NASTAN</div>
+              <p class="product-card__descr">
+                Модель отличается простотой линий и форм, отсутствием броского
+                декора.
+              </p>
+              <div class="product-card__price">80 000 руб.</div>
+            </div>
+          </a>
+        </div>
+        <a href="./catalog.html" class="com-link">Перейти в каталог </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo" href="./index.html">
+          <img src="./img/logo_black.svg" alt="Интерьер." />
+        </a>
+        <div class="footer__navs">
+          <div class="footer__links">
+            <div class="footer__title">Меню</div>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="./index.html">Главная</a></li>
+              <li><a class="footer__link" href="./catalog.html">Каталог</a></li>
+              <li><a class="footer__link" href="./cart.html">Корзина</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <div class="footer__title">Контакты</div>
+            <a class="footer__link" href="tel:+79088008080">+7 908 800 80 80</a>
+            <a class="footer__link" href="mailto:help@interier.com"
+              >help@interier.com</a
+            >
+            <ul class="footer__socials">
+              <li>
+                <a href="#"
+                  ><img src="./img/icons/socials/inst.svg" alt="Инстаграм"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/icons/socials/twitter.svg" alt="Твитер"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/icons/socials/facebook.svg" alt="Фейсбук"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="footer__form" action="#">
+          <p>Получайте наши новости и обновления</p>
+          <input placeholder="Email Address" type="email" />
+          <button class="com-btn com-btn_grey">Подписаться</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

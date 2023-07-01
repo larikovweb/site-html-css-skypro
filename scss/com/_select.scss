@@ -1,0 +1,26 @@
+.com-select {
+    cursor: pointer;
+    position: relative;
+    width: rem(288);
+    height: rem(41);
+    padding: 0 rem(14);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $lightColor;
+    background-image: url('../img/icons/sort_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right rem(15) top 50%, 0 0;
+    background-size: rem(13) auto, 100%;
+    border: rem(1) solid $inputColor;
+    border-radius: rem(20);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: rem(16);
+    color: $darkColor;
+    outline: none;
+
+    &:focus {
+        background-image: url('../img/icons/sort_arrow_active.svg');
+    }
+}

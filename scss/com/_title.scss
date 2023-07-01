@@ -1,0 +1,12 @@
+.com-title {
+    font-weight: 600;
+    font-size: rem(48);
+    line-height: rem(59);
+    color: $darkColor;
+    margin-bottom: rem(32);
+
+    @media (max-width: $phoneWidth) {
+        font-size: rem(24);
+        line-height: rem(29);
+    }
+}

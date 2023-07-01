@@ -1,0 +1,42 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+input {
+    font-family: 'Montserrat';
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &::placeholder {
+        font-family: 'Montserrat';
+        transition: opacity .3s;
+    }
+
+    &:focus {
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}

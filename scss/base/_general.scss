@@ -1,0 +1,105 @@
+html {
+    font-size: 16px;
+
+    @media (max-width: $desktopWidth) {
+        font-size: calcFluidFontSize(13.23, 16, 992, 1200);
+    }
+
+    @media (max-width: $tableWidth) {
+        font-size: calcFluidFontSize(11.09, 19.03, 578, 992);
+    }
+
+    @media (max-width: $phoneWidth) {
+        font-size: calcFluidFontSize(10.45, 21.58, 180, 578);
+    }
+
+    // @media (max-width: $phoneWidth) {
+    //     font-size: calcFluidFontSize(10.45, 21.58, 280, 578);
+    // }
+
+}
+
+section {
+    padding-top: rem(64);
+
+    &:first-child:not(.main) {
+        padding-top: rem(204);
+        height: rem(400);
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: 25% top;
+            z-index: -1;
+        }
+    }
+
+    &:first-child {
+        position: relative;
+
+        .container {
+            >*:not(picture) {
+                position: relative;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: rgba($color: $darkColor, $alpha: .3);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            animation: fadeOverlay .5s linear;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: rem(64);
+    }
+}
+
+.container {
+    max-width: rem(1248);
+    width: 100%;
+    padding-left: rem(24);
+    padding-right: rem(24);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: rem(64);
+    line-height: rem(70);
+    color: $lightColor;
+}
+
+@media (max-width: $phoneWidth) {
+    .container {
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+
+    section {
+        padding-top: rem(32);
+
+        &:first-child:not(.main) {
+            padding-top: rem(171);
+        }
+
+        &:last-child {
+            padding-bottom: rem(32);
+        }
+    }
+
+    h1 {
+        font-size: rem(44);
+        line-height: rem(59);
+        text-align: center;
+    }
+}

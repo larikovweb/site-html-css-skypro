@@ -1,0 +1,82 @@
+{
+    "workbench.colorTheme": "Darcula",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css/"
+        }
+    ],
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/usr/bin/bash",
+            "args": [
+                "-i"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "eslint.validate": [
+        "typescript",
+        "javascript"
+    ],
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[scss]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "michelemelluso.code-beautifier",
+        "editor.formatOnSave": true
+    },
+    "[yaml]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.autoIndent": "full",
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.suggest.showSnippets": false
+    },
+    "terminal.explorerKind": "external",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "window.newWindowDimensions": "maximized",
+    "npm.scriptExplorerAction": "run",
+    "npm.packageManager": "yarn",
+    "files.associations": {
+        "*.json": "json",
+        "*.tsx": "typescriptreact",
+        "*.graphql": "graphql",
+        ".env": "shellscript"
+    },
+    "remote.containers.workspaceMountConsistency": "consistent",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.userWords": [
+        "clickhouse",
+        "codegen",
+        "denull",
+        "ethersproject",
+        "graphly",
+        "prefetch",
+        "presale",
+        "presales",
+        "Presign"
+    ],
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "liveServer.settings.port": 5501
+}

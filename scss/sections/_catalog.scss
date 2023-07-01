@@ -1,0 +1,29 @@
+.catalog {
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: rem(16);
+
+        >* {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        padding-bottom: rem(32);
+    }
+
+    &__more {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $darkColor;
+    }
+
+    img {
+        object-position: left top;
+    }
+}

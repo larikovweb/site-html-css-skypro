@@ -1,0 +1,223 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__list {
+        width: 100%;
+        max-width: rem(768);
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(14);
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        padding: rem(32) 0;
+        border-top: rem(0.5) solid $inputColor;
+
+        &-img {
+            position: relative;
+            min-width: rem(173);
+            height: rem(173);
+            margin-right: rem(32);
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        &-name {
+            font-weight: 500;
+            font-size: rem(24);
+            line-height: rem(29);
+            margin-bottom: rem(14);
+        }
+
+        &-descr {
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: rem(17);
+            color: $greyColor;
+            margin-bottom: rem(16);
+            max-width: rem(276);
+        }
+
+        &-price {
+            font-weight: 500;
+            font-size: rem(16);
+            line-height: rem(20);
+            color: $darkColor;
+            margin-bottom: rem(15);
+        }
+
+        a {
+            &:not(:last-child) {
+                margin-right: rem(16);
+            }
+        }
+
+        &-count {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #F7F6F6;
+            border-radius: rem(6);
+            width: rem(71);
+            height: rem(51);
+            margin-left: auto;
+
+            input {
+                background: transparent;
+                font-weight: 600;
+                font-size: rem(14);
+                line-height: 210%;
+                color: $darkColor;
+                border: none;
+                outline: none;
+                width: rem(41);
+                height: rem(27);
+                padding-left: rem(6);
+                text-align: center;
+            }
+
+            span {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 50%;
+                right: rem(14);
+                transform: translateY(-50%);
+            }
+
+            i {
+                cursor: pointer;
+                width: rem(16);
+                height: rem(16);
+                background: url(./../img/icons/arrow-input.svg) center center/contain no-repeat;
+                opacity: .5;
+                transition: opacity .3s;
+
+                &:nth-child(2) {
+                    transform: scale(1, -1);
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+    &__foot {
+        display: flex;
+
+        .com-btn {
+            max-width: rem(200);
+        }
+
+        >*:not(:last-child) {
+            margin-right: rem(8);
+        }
+    }
+
+    &__form {
+        position: sticky;
+        top: rem(20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #F7F6F6;
+        border-radius: rem(20);
+        padding: rem(42) rem(44);
+        height: fit-content;
+        width: 100%;
+        max-width: rem(379);
+
+        .com-input {
+            margin-bottom: rem(40);
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: rem(36);
+            margin-bottom: rem(36);
+        }
+
+        &-price {
+            margin-top: rem(24);
+            font-weight: 400;
+            font-size: rem(24);
+            line-height: rem(29);
+            margin-bottom: rem(16);
+
+            b {
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media (max-width: $tableWidth) {
+        &__list {
+            margin-bottom: rem(64);
+        }
+    }
+
+    @media (max-width: $phoneWidth) {
+        &__item {
+            padding: rem(18) 0 rem(24);
+
+            &-img {
+                display: none;
+            }
+
+            &-name {
+                font-size: rem(18);
+                line-height: rem(22);
+            }
+
+            &-info {
+                padding-right: rem(20);
+                max-width: rem(250);
+            }
+
+            &-descr,
+            &-price {
+                font-size: rem(12);
+                line-height: rem(15);
+            }
+
+            &-link {
+                font-size: rem(14);
+            }
+        }
+
+        &__foot {
+            margin-top: .5rem;
+
+            .com-btn {
+                font-size: rem(12);
+                line-height: rem(15);
+
+                &:not(:last-child) {
+                    margin-right: rem(14);
+                }
+            }
+        }
+
+        &__form {
+            padding: rem(42) rem(28);
+        }
+    }
+}
